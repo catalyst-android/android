@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!--Catalyst Oneplus 8t repos-->
-  <project path="device/oneplus/kebab" name="LineageOS/android_device_oneplus_kebab" groups="qcom,pdk-qcom" revision="lineage-19.1" />
-  <project path="device/oneplus/sm8250-common" name="LineageOS/android_device_oneplus_sm8250-common" groups="qcom,pdk-qcom" revision="lineage-19.1" />
+  <!--Catalyst additions-->
+  <project path="android" name="catalyst-android/android" revision="12.1" />
+  <project path="build/make" name="catalyst-android/build_make" groups="pdk" revision="12.1" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="catalyst-android/build_soong" groups="pdk,tradefed" revision="12.1" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="frameworks/base" name="catalyst-android/frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="12.1" />
+  <project path="packages/apps/Settings" name="catalyst-android/packages_apps_Settings" groups="pdk-fs" revision="12.1" />
+  <project path="system/core" name="catalyst-android/system_core" groups="pdk" revision="12.1" />
+  <project path="vendor/lineage" name="catalyst-android/vendor_catalyst" revision="12.1" />
+  <project path="vendor/gapps" name="crdroidandroid/android_vendor_gapps" remote="gitlab" revision="12.1" />
+
+  <!--Device specific repos repos-->
+  <project path="device/oneplus/kebab" name="catalyst-android/device_oneplus_kebab" groups="qcom,pdk-qcom" revision="12.1" />
+  <project path="device/oneplus/sm8250-common" name="catalyst-android/device_oneplus_sm8250-common" groups="qcom,pdk-qcom" revision="12.1" />
   <project path="hardware/oneplus" name="LineageOS/android_hardware_oneplus" groups="qcom,pdk-qcom" revision="lineage-19.1" />
-  <project path="kernel/oneplus/sm8250" name="LineageOS/android_kernel_oneplus_sm8250" groups="qcom,pdk-qcom" revision="lineage-19.1" />
-  <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" groups="qcom,pdk-qcom" revision="lineage-19.1" />
+  <project path="kernel/oneplus/sm8250" name="catalyst-android/kernel_oneplus_sm8250" groups="qcom,pdk-qcom" revision="12.1" />
+  <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" groups="qcom,pdk-qcom" revision="12.1" />
 
 </manifest>
