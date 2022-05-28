@@ -3,6 +3,7 @@
 
   <!--Catalyst additions-->
   <project path="android" name="catalyst-android/android" revision="12.1" />
+  <project path="bootable/recovery" name="catalyst-android/bootable_recovery" groups="pdk" revision="12.1" />
   <project path="build/make" name="catalyst-android/build_make" groups="pdk" revision="12.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -27,6 +28,6 @@
   <project path="device/oneplus/sm8250-common" name="catalyst-android/device_oneplus_sm8250-common" groups="qcom,pdk-qcom" revision="12.1" />
   <project path="hardware/oneplus" name="LineageOS/android_hardware_oneplus" groups="qcom,pdk-qcom" revision="lineage-19.1" />
   <project path="kernel/oneplus/sm8250" name="catalyst-android/kernel_oneplus_sm8250" groups="qcom,pdk-qcom" revision="12.1" />
-  <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" groups="qcom,pdk-qcom" revision="12.1" />
+  <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" groups="qcom,pdk-qcom" revision="lineage-19.1" />
 
 </manifest>
