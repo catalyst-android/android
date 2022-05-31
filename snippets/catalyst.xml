@@ -19,6 +19,7 @@
   </project>
   <project path="frameworks/base" name="catalyst-android/frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="12.1" />
   <project path="packages/apps/Settings" name="catalyst-android/packages_apps_Settings" groups="pdk-fs" revision="12.1" />
+  <project path="packages/apps/Bluetooth" name="crdroidandroid/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" revision="12.1" />
   <project path="system/core" name="catalyst-android/system_core" groups="pdk" revision="12.1" />
   <project path="system/sepolicy" name="catalyst-android/system_sepolicy" groups="pdk" revision="12.1" />
   <project path="vendor/lineage" name="catalyst-android/vendor_catalyst" revision="12.1" />
