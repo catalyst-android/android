@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="crdroid-gitlab"
-           fetch="https://gitlab.com/"
-           sync-c="true"
-           sync-j="4"
-           revision="refs/heads/12.1" />
-
   <!--Catalyst additions-->
   <project path="android" name="catalyst-android/android" revision="12.1" />
   <project path="bootable/recovery" name="catalyst-android/bootable_recovery" groups="pdk" revision="12.1" />
@@ -35,8 +29,8 @@
   <project path="device/oneplus/sm8250-common" name="catalyst-android/device_oneplus_sm8250-common" groups="qcom,pdk-qcom" revision="12.1" />
   <project path="hardware/oneplus" name="crdroidandroid/android_hardware_oneplus" groups="qcom,pdk-qcom" revision="12.1" />
   <project path="kernel/oneplus/sm8250" name="catalyst-android/kernel_oneplus_sm8250" groups="qcom,pdk-qcom" revision="12.1" />
-  <project path="vendor/oneplus/apps" name="crdroidandroid/android_vendor_oneplus_apps" groups="qcom,pdk-qcom" revision="12.1" remote="crdroid-gitlab" />
-  <project path="vendor/oneplus/kebab" name="crdroidandroid/proprietary_vendor_oneplus_kebab" groups="qcom,pdk-qcom" revision="12.1" remote="crdroid-gitlab" />
-  <project path="vendor/oneplus/sm8250-common" name="crdroidandroid/proprietary_vendor_oneplus_sm8250-common" groups="qcom,pdk-qcom" revision="12.1" remote="crdroid-gitlab" />
+  <project path="vendor/oneplus/apps" name="umang96/android_vendor_oneplus_apps" groups="qcom,pdk-qcom" revision="12.1" remote="gitlab" />
+  <project path="vendor/oneplus/kebab" name="crdroidandroid/proprietary_vendor_oneplus_kebab" groups="qcom,pdk-qcom" revision="12.1" remote="gitlab" />
+  <project path="vendor/oneplus/sm8250-common" name="crdroidandroid/proprietary_vendor_oneplus_sm8250-common" groups="qcom,pdk-qcom" revision="12.1" remote="gitlab" />
 
 </manifest>
