@@ -20,7 +20,7 @@
   <project path="frameworks/base" name="catalyst-android/frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="12.1" />
   <project path="hardware/interfaces" name="crdroidandroid/android_hardware_interfaces" groups="pdk" revision="12.1" />
   <project path="device/qcom/sepolicy" name="crdroidandroid/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="12.1" />
-  <project path="device/lineage/sepolicy" name="crdroidandroid/android_device_lineage_sepolicy" revision="12.1" />
+  <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" revision="lineage-19.1" />
   <project path="packages/apps/Settings" name="catalyst-android/packages_apps_Settings" groups="pdk-fs" revision="12.1" />
   <project path="packages/apps/Bluetooth" name="crdroidandroid/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" revision="12.1" />
   <project path="system/core" name="catalyst-android/system_core" groups="pdk" revision="12.1" />
