@@ -1,62 +1,36 @@
-<img src="https://github.com/ArrowOS/getting_started/blob/master/misc/logo.png?raw=true">
+# Project Catalyst
 
-# ArrowOS
+Catalyst OS is a minimal custom ROM with focus on sustained performance and creating a great combination of battery life and performance. We are not like 
+any other ROM because, we go above and beyond and write original features to achieve our goals. With Catalyst OS you will be experiencing a closely tailored best experience for your device, given that you know what you are doing. 
 
- Getting Started
----------------
-To get started with the ArrowOS sources, you'll need to get
-familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
+Getting started
+===============
 
-To initialize your local repository, use command:
+To get started with Android/CatalystOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
 
-```bash
-repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-13.0
+To initialize your local repository using the Catalyst trees, use a command like this:
+```
+repo init --depth=1 -u https://github.com/catalyst-android/android.git -b 13
+```
+Then to sync up:
+```
+repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j `nproc`
 ```
 
-Then sync up:
+Building Catalyst
+=================
 
-```bash
-repo sync
+```
+  . build/envsetup.sh
+  lunch catalyst_<devicecodename>-userdebug
+  m bacon -j$(nproc --all)
 ```
 
-Building the System
--------------------
- Initialize the ROM environment with the envsetup.sh script.
+Credits
+=======
 
-```bash
-. build/envsetup.sh
-```
-
-Lunch your device after cloning all device sources if needed.
-
-```bash
-lunch arrow_devicecodename-buildtype
-```
-
-Start compilation
-
-```bash
-m otapackage
-```
-
-OR
-
-```bash
-m bacon
-```
-
-**You can also refer to our detailed guides as listed below:**
-
-[How to compile ArrowOS from source](https://blog.arrowos.net/posts/compilation-guide)
-
-[How to submit patches to ArrowOS Gerrit](https://blog.arrowos.net/how-to-submit-patches-to-arrowos-gerrit)
-
-[Apply for Maintainership](https://blog.arrowos.net/posts/apply-for-maintainership) OR [Submit device for community builds](https://blog.arrowos.net/introducing-community-builds)
-
-To check thread template refer [**HERE**](https://raw.githubusercontent.com/ArrowOS/documentation/master/thread_template.txt)
-
----------------------------------------------------------------------------------------------------------------------
-
-[ArrowOS Website](https://www.arrowos.net/) | [ArrowOS Blog](https://blog.arrowos.net/)
-
----------------------------------------------------------------------------------------------------------------------
+- [**AOSP**](https://android.googlesource.com)
+- [**ArrowOS**](https://github.com/ArrowOS)
+- [**LineageOS**](https://github.com/LineageOS)
+- [**Superior OS**](https://github.com/SuperiorOS)
+- [**crDroid**](https://github.com/crdroid-android)
