@@ -21,6 +21,7 @@
 	<project path="device/catalyst/sepolicy" name="device_catalyst_sepolicy" remote="cat" />
 	<project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="cat" />
 	<project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="cat" />
+    <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="cat" />
 	<project path="frameworks/av" name="frameworks_av" remote="cat" />
 	<project path="frameworks/base" name="frameworks_base" remote="cat" revision="13" />
 	<project path="frameworks/native" name="frameworks_native" remote="cat" />
